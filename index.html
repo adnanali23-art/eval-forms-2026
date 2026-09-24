@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>استمارات تقييم الأداء 2025–2026</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#f3f5f1; --surface:#ffffff; --ink:#15233a; --muted:#566273; --line:#dde3dc;
+  --accent:#0e6b58; --accent-soft:#e3f1ec; --gold:#a8741a; --gold-soft:#fbf2e0; --staff:#2d4f8c; --staff-soft:#e6ecf7;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  color-scheme:dark; --bg:#0f1520; --surface:#172131; --ink:#e8edf3; --muted:#9aa7b7; --line:#2a3647;
+  --accent:#4fc2a3; --accent-soft:#16322d; --gold:#e0b35c; --gold-soft:#322a18; --staff:#8fb0ea; --staff-soft:#1b2740;}}
+:root[data-theme="dark"]{
+  color-scheme:dark; --bg:#0f1520; --surface:#172131; --ink:#e8edf3; --muted:#9aa7b7; --line:#2a3647;
+  --accent:#4fc2a3; --accent-soft:#16322d; --gold:#e0b35c; --gold-soft:#322a18; --staff:#8fb0ea; --staff-soft:#1b2740;}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;font-size:15.5px;line-height:1.75;direction:rtl;padding-inline:16px;padding-block:24px 48px}
+.wrap{max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+h1,h2,h3{font-family:"Readex Pro","IBM Plex Sans Arabic",Tahoma,sans-serif;text-wrap:balance;margin:0}
+header .eyebrow{color:var(--accent);font-weight:600;font-size:13.5px;letter-spacing:.02em}
+header h1{font-size:clamp(24px,5vw,36px);line-height:1.35;margin-top:4px}
+header p{color:var(--muted);margin:8px 0 0;max-width:62ch}
+.grid-home{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.big{all:unset;box-sizing:border-box;cursor:pointer;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px 22px;display:flex;flex-direction:column;gap:8px;min-height:170px;transition:transform .15s,border-color .15s}
+.big:hover{transform:translateY(-2px);border-color:var(--accent)}
+.big:focus-visible,.btn:focus-visible,.back:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.big .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent)}
+.big.staff .ic{background:var(--staff-soft);color:var(--staff)}
+.big h2{font-size:22px}
+.big span.sub{color:var(--muted);font-size:14px}
+.big .go{margin-top:auto;color:var(--accent);font-weight:600;font-size:14px}
+.big.staff .go{color:var(--staff)}
+.common h3{font-size:15px;color:var(--muted);font-weight:500;margin-bottom:10px}
+.grid-common{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.small{background:var(--gold-soft);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.small b{font-family:"Readex Pro",sans-serif;font-weight:500;font-size:16px}
+.small p{margin:0;color:var(--muted);font-size:13.5px}
+.guide{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+.guide h3{font-size:16px;margin-bottom:6px}
+.guide ul{margin:0;padding-inline-start:20px;font-size:14.5px}
+.guide li{margin-block:3px}
+.back{all:unset;cursor:pointer;color:var(--accent);font-weight:600;font-size:14.5px;align-self:flex-start}
+.list{display:flex;flex-direction:column;gap:12px}
+.form{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:grid;grid-template-columns:auto 1fr;gap:4px 16px}
+.num{grid-row:span 3;width:62px;height:62px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:"Readex Pro",sans-serif;line-height:1.1}
+.staffv .num{background:var(--staff-soft);color:var(--staff)}
+.num small{font-size:10.5px;font-weight:500}
+.num strong{font-size:24px;font-variant-numeric:tabular-nums}
+.form h3{font-size:18px}
+.form .full{color:var(--muted);font-size:13.5px}
+.who{background:var(--gold-soft);border-radius:8px;padding:8px 12px;font-size:14px;margin-top:6px}
+.who b{color:var(--gold)}
+.actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;border-radius:9px;padding:9px 16px;font:600 14.5px "IBM Plex Sans Arabic",Tahoma,sans-serif;cursor:pointer;border:1px solid var(--accent)}
+.btn.pri{background:var(--accent);color:var(--surface)}
+.btn.sec{background:transparent;color:var(--accent)}
+.staffv .btn{border-color:var(--staff)} .staffv .btn.pri{background:var(--staff)} .staffv .btn.sec{color:var(--staff)}
+.small .btn{align-self:flex-start;border-color:var(--gold);background:var(--gold);color:var(--surface)}
+.req{grid-column:1/-1;margin-top:12px;border-top:1px dashed var(--line);padding-top:12px}
+.req ol{margin:0;padding-inline-start:22px;font-size:14.5px}
+.req li{margin-block:4px}
+.req .note{font-size:13px;color:var(--muted);margin-top:8px}
+footer{color:var(--muted);font-size:13px;text-align:center;border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:640px){.grid-home,.grid-common{grid-template-columns:1fr}.big{min-height:0}.form{grid-template-columns:1fr}.num{grid-row:auto;flex-direction:row;gap:6px;width:auto;height:auto;padding:4px 12px;justify-self:start}}
+@media (prefers-reduced-motion:reduce){.big{transition:none}}
+</style></head><body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">شعبة ضمان الجودة والأداء الجامعي — كلية هندسة الشرقاط</div>
+    <h1>استمارات تقييم الأداء للعام الدراسي 2025–2026</h1>
+    <p>اختر فئتك، ثم حمّل استمارتك الفارغة واطّلع على قائمة الوثائق التي تحتاج إرفاقها معها.</p>
+  </header>
+  <main id="app"></main>
+  <footer>النسخ الرسمية للاستمارات صادرة عن جهاز الإشراف والتقويم العلمي — للاستفسار راجع شعبة ضمان الجودة في الكلية.</footer>
+</div>
+
+<script>
+const REQ = {"10":["محاضر الاجتماعات الدورية","جدول المقررات + إثبات النشاطات الطلابية","روابط المحاضرات الإلكترونية ووسائل الإيضاح","ملف وصف المقرر ونماذج الاختبارات والتغذية الراجعة","تأييد الالتزام والدوام من القسم","مستلات البحوث + إثبات الفهرسة (Scopus/Clarivate)","مستلات البحوث + أغلفة الكتب والرقم المعياري","الأوامر الجامعية للإشراف + إثبات التقويم العلمي","أوامر تشكيل اللجان","شهادات/كتب المشاركة في التعليم المستمر والجودة","كتب الشكر والشهادات التقديرية","استمارة الزيارة الميدانية + إثبات الأعمال التطوعية","إثبات البراءات/الجوائز/معامل هيرش/المناصب/البحوث الإضافية","نسخة أمر التكليف الإداري/الجامعي"],"20":["جدول المقررات التي درّسها (نظري/عملي) + إثبات النشاطات الطلابية (رياضي/فني/كشفي/ثقافي)","إثبات التعليم المدمج: روابط أو لقطات المحاضرات والفعاليات المنشورة على موقع الكلية أو القنوات التعليمية (5 على الأقل) ووسائل الإيضاح","نماذج أساليب تقييم الطلبة (اختبارات/تقارير/أنشطة) + التغذية الراجعة والإجابات النموذجية","وصف المقرر والخطة الدراسية + مقترحات تطوير المقرر","مستلات البحوث المنشورة + إثبات الفهرسة (Scopus/Clarivate) ومعامل الاستشهاد CiteScore","بحوث المجلات العربية والمحلية والمؤتمرات + كتب التقويم العلمي/اللغوي + أغلفة الكتب/الفصول والرقم المعياري","شهادات المشاركة في التعليم المستمر والجودة والسمنار ودورات طرائق التدريس","استمارات توثيق الزيارات الميدانية والحقلية أو الاختبارات والتحليلات المختبرية","أوامر اللجان الدائمية والمؤقتة واللجنة الامتحانية ولجان السمنار","كتب الشكر والتقدير وتثمين الجهود والشهادات التقديرية خلال عام التقييم","كتب رسمية تثبت الأعمال التطوعية وخدمة المجتمع","إثبات مواطن القوة (براءات/جوائز، معامل هيرش، عضوية شعب الجودة أو الإرشاد أو حقوق الإنسان، مدرب معتمد، بحوث إضافية، دعم نادي الطلبة، نقابة الأكاديميين…)"],"21":["جدول المقررات التي درّسها + إثبات النشاط الطلابي","روابط/لقطات المحاضرات الإلكترونية ووسائل الإيضاح","ملف وصف المقرر ونماذج الاختبارات والتغذية الراجعة","تأييد الالتزام والدوام من القسم","مستلات البحوث + إثبات الفهرسة (Scopus/Clarivate)","صور أغلفة الكتب/الفصول + الرقم المعياري","الأوامر الجامعية للإشراف + إثبات التقويم العلمي","أوامر تشكيل اللجان","كتب/شهادات المشاركة في التعليم المستمر والجودة","كتب الشكر والشهادات التقديرية","استمارة الزيارة الميدانية + إثبات الأعمال التطوعية وخدمة المجتمع","إثبات البراءات/الجوائز/المناصب/معامل هيرش"],"25":["شهادات المشاركة أو المساهمة في المؤتمرات والندوات وورش العمل والدورات","كتب الشكر والتقدير (من الوزير، وكيل الوزارة، المدير العام أو من بدرجتهم)","ما يثبت النشاطات الإضافية وتطوير الأداء في مجال العمل","إثبات مواطن القوة (براءات/جوائز، معامل هيرش، عضوية شعب الجودة أو الإرشاد أو حقوق الإنسان، تطوير منظومة إلكترونية، مدرب معتمد، بحوث إضافية، دعم نادي الطلبة، نقابة الأكاديميين…)","ما يثبت الشمول بقانون رعاية ذوي الإعاقة والاحتياجات الخاصة رقم (38) لسنة 2013"],"26":["جدول المقررات + إثبات النشاطات الطلابية","روابط المحاضرات الإلكترونية ووسائل الإيضاح","ملف وصف المقرر ونماذج الاختبارات والتغذية الراجعة","تأييد الالتزام والدوام من القسم","مستلات البحوث + إثبات الفهرسة + أغلفة الكتب والرقم المعياري","الأوامر الجامعية للإشراف + إثبات التقويم العلمي والمشاركات","أوامر تشكيل اللجان","إثبات التكليفات الإضافية (تطوير منظومة/مسؤولية شعبة/لجان اعتماد/مدرب معتمد/بحوث إضافية/دعم نادي الطلبة/نقابة/حقوق الإنسان)"],"28":["شهادات/كتب المشاركة في الندوات والدورات","أوامر تشكيل اللجان","إثبات الأعمال التطوعية","كتب الشكر والشهادات التقديرية","إثبات مواطن القوة (ارتباط بضمان الجودة/شؤون المرأة/دعم نادي الطلبة…)"],"29":["تأييد الدوام والانتظام من المسؤول المباشر","ما يثبت المتابعة والتطوير المهني (دورات/شهادات)","كتب الشكر من الوزير","كتب الشكر من وكيل الوزارة/رئيس الجامعة","كتب الشكر من مدير عام/مساعد رئيس الجامعة","إثبات الدعم الشهري لنادي الطلبة"],"34":["محاضر الاجتماعات الدورية","نسخة من المصادقة","تقارير الإنفاق","إثبات الموارد الذاتية","إثبات الأنشطة العامة","إثبات التطوير","مستلات البحوث + إثبات الفهرسة (Scopus/Clarivate)","مستلات البحوث + إثبات النشر","أغلفة الكتب + الرقم المعياري","إثبات المؤتمرات والندوات","إثبات مشاركات الطلبة","إثبات الرعاية","إثبات النشاطات الطلابية","إثبات المشاركات والاستحداث","إثبات البنى التحتية","إثبات النشاطات المجتمعية","إثبات الفعاليات","إثبات النشاطات","إثبات البرامج الخاصة","إثبات التكريم (كتب الشكر/الجوائز/براءات الاختراع/معامل هيرش)"],"39":["كتاب النصاب التدريسي + أوامر تشكيل اللجان","كتب الشكر والتقدير والجوائز الأكاديمية","شهادات الدورات والورش والمؤتمرات وحضور السمنارات","مستلات البحوث + إثبات الفهرسة + براءات الاختراع + أغلفة الكتب","إثبات العضويات الدولية ولجان التحرير والمتحدث الرئيسي","إثبات الدعم المالي/المشروع للجامعة","كتب/شهادات المشاركة في التعليم المستمر والجودة","استمارات الزيارات الميدانية + إثبات الأعمال التطوعية وخدمة المجتمع"]};
+const Q = 'https://qaa.tu.edu.iq/images/2026/08/18/';
+const FORMS = {
+  10:{t:'التدريسي الإداري',full:'الملف التقويمي لأداء التدريسي الإداري للعام الدراسي 2025–2026',url:Q+'10-2026_compressed.pdf',
+      who:'كل تدريسي يشغل <b>منصبًا إداريًا</b> مضى على تكليفه به <b>6 أشهر فأكثر</b> — يُقيَّم بهذه الاستمارة حتى لو كان يدرّس وفق مسار بولونيا.'},
+  39:{t:'تدريسي مسار بولونيا',full:'تقييم أداء أعضاء الهيئة التدريسية لمسار بولونيا للعام الدراسي 2025–2026 (النسخة المحدّثة)',url:'https://drive.google.com/file/d/1s1IhYEuIxDpToUindriwAtBZed79hrDH/view?usp=sharing',
+      who:'التدريسي الذي يدرّس ضمن <b>مسار بولونيا</b> وليس لديه منصب إداري.'},
+  21:{t:'التدريسي الاعتيادي',full:'تقييم أداء أعضاء الهيئة التدريسية للعام الدراسي 2025–2026',url:Q+'21-2026_1_compressed.pdf',
+      who:'التدريسي المتفرّغ الذي <b>لا يشغل منصبًا إداريًا</b> ولا يدرّس ضمن مسار بولونيا.'},
+  20:{t:'المتفرغون جزئيًا / الدارسون',full:'تقييم أداء أعضاء الهيئة التدريسية المتفرغين جزئيًا أو الدارسين وفق قانون 2020 للعام الدراسي 2025–2026',url:Q+'20-2026_compressed.pdf',
+      who:'التدريسي <b>المتفرّغ جزئيًا</b> أو <b>الدارس</b> (في إجازة دراسية) وفق قانون 2020.'},
+  25:{t:'ذوو الإعاقة والاحتياجات الخاصة',full:'تقييم أداء المشمولين بقانون رعاية ذوي الإعاقة والاحتياجات الخاصة رقم (38) لسنة 2013 للعام الدراسي 2025–2026',url:Q+'25-2026_compressed.pdf',
+      who:'المنتسب المشمول بقانون رعاية ذوي الإعاقة والاحتياجات الخاصة رقم (38) لسنة 2013.'},
+  26:{t:'المكلّفون بالتدريس وعقود 315 والأجر اليومي',full:'تقييم أداء المكلفين بالتدريس والموظفين المعينين بصفة عقد 315 والأجر اليومي للعام الدراسي 2025–2026',url:Q+'26.26_compressed.pdf',
+      who:'المكلَّف بالتدريس، أو المعيَّن بصفة <b>عقد 315</b> أو <b>أجر يومي</b>.'},
+  34:{t:'عميد الكلية',full:'الملف التقويمي لأداء عمداء الكليات والمعاهد في الجامعات الحكومية والأهلية للعام الدراسي 2025–2026',url:Q+'34-2026_compressed.pdf',
+      who:'خاصة بـ<b>السيد العميد</b>.'},
+  28:{t:'الموظف',full:'تقييم الأداء لموظفي وزارة التعليم العالي والبحث العلمي لسنة 2026',url:Q+'28-2026_compressed.pdf',
+      who:'الموظف الإداري / الفني على الملاك الدائم.'},
+  29:{t:'المهنيون والحرفيون',full:'تقييم أداء الموظفين المهنيين والحرفيين في وزارة التعليم العالي والبحث العلمي لسنة 2026',url:Q+'29-2026_compressed.pdf',
+      who:'الموظف ذو العنوان <b>المهني أو الحرفي</b>.'},
+};
+const GROUPS = {
+  teachers:{title:'استمارات أعضاء الهيئة التدريسية',ids:[10,39,21,20,25,26,34],cls:''},
+  staff:{title:'استمارات الموظفين',ids:[28,29,26,25],cls:'staffv'},
+};
+const COMMON = [
+  {t:'استمارة توثيق الزيارات الميدانية',d:'تُملأ لكل زيارة ميدانية وتُرفق مع استمارة التقييم.',url:Q+'alzyara_almaydania.pdf'},
+  {t:'استمارة التعهد الخطي',d:'يوقّعها المنتسب ويرفقها مع استمارته.',url:Q+'ta3ahud.pdf'},
+];
+const icT='<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg>';
+const icS='<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5h6v2M3 13h18"/></svg>';
+const app=document.getElementById('app');
+
+function home(){
+  app.innerHTML=`<div class="wrap" style="gap:22px">
+    <div class="grid-home">
+      <button class="big" data-go="teachers"><div class="ic">${icT}</div><h2>استمارات أعضاء الهيئة التدريسية</h2>
+        <span class="sub">التدريسي الإداري، الاعتيادي، مسار بولونيا، المتفرغ جزئيًا، وغيرها</span><span class="go">عرض الاستمارات ←</span></button>
+      <button class="big staff" data-go="staff"><div class="ic">${icS}</div><h2>استمارات الموظفين</h2>
+        <span class="sub">الموظف، المهنيون والحرفيون، العقود والأجر اليومي</span><span class="go">عرض الاستمارات ←</span></button>
+    </div>
+    <section class="common"><h3>استمارات مشتركة يحتاجها الجميع</h3><div class="grid-common">
+      ${COMMON.map(c=>`<div class="small"><b>${c.t}</b><p>${c.d}</p><a class="btn" href="${c.url}" target="_blank" rel="noopener">تحميل الاستمارة</a></div>`).join('')}
+    </div></section>
+    <section class="guide"><h3>أيّ استمارة تخصّني؟</h3><ul>
+      <li>لديك <b>منصب إداري منذ 6 أشهر فأكثر</b> ← استمارة <b>(10)</b> حتى لو كنت تدرّس في مسار بولونيا.</li>
+      <li>تدرّس في <b>مسار بولونيا</b> وليس لديك منصب ← استمارة <b>(39)</b>.</li>
+      <li>تدريسي اعتيادي بلا منصب وخارج بولونيا ← استمارة <b>(21)</b>.</li>
+      <li>متفرغ جزئيًا أو دارس ← <b>(20)</b> · مكلَّف بالتدريس أو عقد 315 / أجر يومي ← <b>(26)</b> · مشمول بقانون ذوي الإعاقة ← <b>(25)</b>.</li>
+      <li>موظف ← <b>(28)</b> · مهني أو حرفي ← <b>(29)</b>.</li>
+    </ul></section></div>`;
+}
+function group(key){
+  const g=GROUPS[key];
+  app.innerHTML=`<div class="wrap ${g.cls}" style="gap:16px">
+    <button class="back" data-go="">→ العودة إلى الصفحة الرئيسية</button>
+    <h2 style="font-size:24px">${g.title}</h2>
+    <div class="list">${g.ids.map(id=>card(id)).join('')}</div></div>`;
+}
+function card(id){
+  const f=FORMS[id],r=REQ[id];
+  const reqHtml=r?`<ol>${r.map(x=>`<li>${x}</li>`).join('')}</ol>
+      <div class="note">فقرات التقييم التي يضع درجتها المسؤول المباشر أو اللجنة، ورأي الطالب (تُدخله شعبة ضمان الجودة)، لا تحتاج منك إرفاقًا. أرفق كذلك استمارة التعهد الخطي.</div>`
+    :`<div class="note" style="margin:0">قائمة المتطلبات التفصيلية لهذه الاستمارة قيد الإعداد — راجع شعبة ضمان الجودة، وأرفق عمومًا ما يثبت كل فقرة تطالب بها في الاستمارة مع التعهد الخطي.</div>`;
+  return `<article class="form"><div class="num"><small>استمارة</small><strong>${id}</strong></div>
+    <h3>${f.t}</h3><div class="full">${f.full}</div><div class="who"><b>المشمول بها: </b>${f.who}</div>
+    <div class="actions"><a class="btn pri" href="${f.url}" target="_blank" rel="noopener">تحميل الاستمارة</a>
+      <button class="btn sec" id="rb${id}" data-req="${id}" aria-expanded="false">قائمة المتطلبات</button></div>
+    <div class="req" id="rq${id}" hidden><b>الوثائق المطلوب إرفاقها:</b>${reqHtml}</div></article>`;
+}
+function route(){const h=location.hash.slice(1);GROUPS[h]?group(h):home();window.scrollTo(0,0)}
+app.addEventListener('click',e=>{
+  const go=e.target.closest('[data-go]');
+  if(go){const k=go.dataset.go;if(k)location.hash=k;else{history.pushState('',document.title,location.pathname);route()}return}
+  const rb=e.target.closest('[data-req]');
+  if(rb){const p=document.getElementById('rq'+rb.dataset.req);p.hidden=!p.hidden;rb.setAttribute('aria-expanded',String(!p.hidden))}
+});
+window.addEventListener('hashchange',route);
+route();
+</script></body>
+
+</html>
